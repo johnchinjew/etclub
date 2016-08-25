@@ -1,0 +1,32 @@
+.logo-nav {
+  position: fixed;
+  left: 4.25rem;
+  top: 4.25rem;
+  z-index: 999
+}
+
+.logo-nav > a {
+  display: block;
+  width: 4.25rem;
+  height: 4.25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-color 200ms;
+  cursor: pointer;
+}
+
+.logo-nav > .logo {
+  background-color: black;
+  background-image: url(../img/logo.svg);
+  background-size: 67%;
+}
+
+.logo-nav > .nav {
+  background-color: white;
+  background-image: url(../img/navicon.svg);
+  background-size: 50%;
+}
+
+.logo-nav > .nav:hover {
+  background-color: white;
+}

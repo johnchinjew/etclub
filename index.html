@@ -3,38 +3,60 @@
   <head>
 
     <meta charset='UTF-8'>
-    <title>Jets: Just enough to start!</title>
-    <meta name='description' content='Jets is a boilerplate with Just Enough To Start!'>
+    <title>ENGINEERING TECH</title>
+    <meta name='description' content='Engineering Tech is the premiere STEM club at Los Medanos College.'>
     <meta name='author' content='John Chin-Jew, hi@johnchinjew.com'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name='theme-color' content='#FFF'>
-
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css'>
-    <link rel='stylesheet' href='css/jets.css'>
+    <meta property='og:title' content='Engineering Tech: LMC STEM Club'>
+    <meta property='og:site_name' content='Engineering Tech'>
+    <meta property='og:description' content='Engineering Tech is the premiere STEM club at Los Medanos College.'>
+    <meta property='og:url' content='http://engineering-tech.com'>
+    <meta name='theme-color' content='#fff'>
     <link rel='icon' href='favicon.png'>
 
-    <meta property='og:title' content='jets: just enough to start'>
-    <meta property='og:site_name' content='Github'>
-    <meta property='og:description' content='A boilerplate with Just Enough To Start!'>
-    <meta property='og:url' content='http://github.com/johnchinjew/jets'>
-
-    <base target='_blank'>
+    <style media="screen">
+      @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css";
+      @import "css/setup.css";
+      @import "css/logo-nav.css";
+      @import "css/hero.css";
+      @import "css/phrase.css";
+      @import "css/modules.css";
+    </style>
 
   </head>
   <body>
 
     <div class="logo-nav">
-      <div style="background-image:url(img/logo.svg)" class="logo"></div>
-      <div style="background-image:url(img/navicon.svg)" class="nav"></div>
+      <a class="logo" href="index.html"></a>
+      <a class="nav" href=""></a>
     </div>
+
     <div class="nav-page"></div>
+
+    <header class="hero">
+      <div class="bigwords">
+        <h1>We are Engineering Tech.</h1>
+        <p>
+          The premier STEM club at Los Medanos College.
+        </p>
+      </div>
+      <div class="updates">
+        <p class="message">
+          August 75: Site will be extremely buggy until completion!
+        </p>
+      </div>
+    </header>
+
+    <section class="phrase">
+      <h1>And this is <span>what we do</span>...</h1>
+    </section>
 
     <script src='https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.slim.min.js'></script>
     <script async src='https://google-analytics.com/analytics.js'></script>
-    <script src='js/jets.js'></script>
+    <script src='js/main.js'></script>
     <script>
-      WebFont.load({google:{families:['Heebo:400,700:latin']}})
+      WebFont.load({google:{families:['Heebo:300,700:latin']}})
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new
       Date,ga('create','UA-XXXXX-Y','auto'),ga('send','pageview')
     </script>
