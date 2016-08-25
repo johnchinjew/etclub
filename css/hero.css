@@ -41,7 +41,7 @@
 
 .hero > .bigwords {
   max-width: 34rem;
-  z-index: 999
+  z-index: 777
 }
 
 .hero > .bigwords > h1 {
@@ -65,7 +65,7 @@
   left: 0;
   width: 100%;
   background-color: #282F2F;
-  z-index: 999;
+  z-index: 888;
   color: white;
   text-align: center;
   text-transform: uppercase;
