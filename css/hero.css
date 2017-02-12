@@ -1,52 +1,38 @@
 .hero {
   height: 100vh;
-  background-color: rgba(240,240,240,.35);
+  background-color: rgba(200,200,200,.3);
   background-image: url(../img/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0,.4);
-}
-
 .hero::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
   height: 100vh;
-  width: 90vw;
-  width: calc(100vw - 6.5rem);
-  background-color: rgba(255,255,255,.2);
-  background-image: url(../img/dots.png);
+  width: 100vw;
+  background-color: rgba(0,0,0,.2);
+  background-image: url(../img/dot-overlay.png);
   background-position: center;
   background-repeat: repeat;
-  background-size: 11vmax;
+  background-size: 45vmin;
   background-attachment: fixed;
-  opacity: .8;
 }
 
 .hero > .bigwords {
-  max-width: 34rem;
-  z-index: 777
+  z-index: 1;
+  padding: 4rem;
+  max-width: 45rem;
 }
 
 .hero > .bigwords > h1 {
-  color: #F55;
-  font-size: 5rem;
+  color: #f33;
+  font-size: 4.5em;
   line-height: 1.2;
   margin: 0;
   margin-bottom: 1rem;
@@ -54,22 +40,12 @@
 
 .hero > .bigwords > p {
   color: white;
-  font-size: 2.7rem;
+  font-size: 2em;
   margin: 0;
-  margin-bottom: 1.95rem;
 }
 
-.updates {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #282F2F;
-  z-index: 888;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  font-size: .85rem;
-  padding: .55rem;
+@media (max-width: 500px) {
+  .hero > .bigwords {
+    font-size: 75%;
+  }
 }

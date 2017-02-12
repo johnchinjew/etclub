@@ -1,32 +1,36 @@
 .logo-nav {
   position: fixed;
-  left: 4.25rem;
-  top: 4.25rem;
-  z-index: 999
+  left: 4em;
+  top: 4em;
+  z-index: 999;
+  box-shadow: 0 2px 3px rgba(0,0,0,.2);
+  border-radius: 3px;
+  background-color: white;
 }
 
 .logo-nav > a {
   display: block;
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 3.75em;
+  height: 3.75em;
   background-position: center;
   background-repeat: no-repeat;
-  transition: background-color 200ms;
+  -webkit-transition: background-color 200ms;
+          transition: background-color 200ms;
   cursor: pointer;
 }
 
 .logo-nav > .logo {
-  background-color: black;
   background-image: url(../img/logo.svg);
   background-size: 67%;
 }
 
 .logo-nav > .nav {
-  background-color: white;
-  background-image: url(../img/navicon.svg);
+  background-image: url(../img/menu.svg);
   background-size: 50%;
 }
 
-.logo-nav > .nav:hover {
-  background-color: white;
+@media (max-width: 500px) {
+  .logo-nav {
+    font-size: 75%;
+  }
 }
